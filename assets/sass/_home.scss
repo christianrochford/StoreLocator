@@ -1,0 +1,127 @@
+/*---------------- Home Page ----------------*/
+
+
+
+.map-container{
+	width: 100%;
+	height: 500px;
+	margin-top: 80px;
+	overflow: hidden;
+	position: relative;
+	@include breakpoint(tablet){
+		margin-top: 100px;
+	}
+	@include breakpoint(mobile-landscape){
+		margin-top: 75px;
+		height: 400px;
+	}
+	#panel{
+		width: 250px;
+		min-height: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: 1;
+		transition: all 0.5s ease;
+		@include breakpoint (mobile-landscape){
+			margin-left: -250px;
+		}
+		.icon-magnify{
+			font-size: 4em;
+			display: block;
+			width: 100%;
+			text-align: center;
+			margin: 36px 0 10px;
+		}
+		img{
+			width: 64%;
+			margin: 0 18%;
+		}
+		.avail{
+			width: 80%;
+			margin: 0 10%;
+			text-align: center;
+			@include breakpoint (mobile-landscape){
+				font-size: 0.8em;
+			}
+		}
+		h4{
+			display: none;
+		}
+		input{
+			width: 80%;
+			height: 32px;
+			margin: 20px 10% 10px;
+			@include breakpoint (mobile-landscape){
+				margin: 10px 10%;
+			}
+		}
+		::-webkit-input-placeholder {
+	      color: #777777;
+	      text-transform: uppercase;
+	       @include breakpoint(mobile-landscape){
+	        font-size: 0.8em;
+	      }
+	      @include breakpoint(mobile){
+	        font-size: 0.6em;
+	      }
+	    }
+	    :-moz-placeholder { /* Firefox 18- */
+	      color: #777777;
+	      text-transform: uppercase;
+	      @include breakpoint(mobile-landscape){
+	        font-size: 0.8em;
+	      }
+	      @include breakpoint(mobile){
+	        font-size: 0.6em;
+	      }
+	    }
+
+	    ::-moz-placeholder {  /* Firefox 19+ */
+	      color: #777777t;
+	      text-transform: uppercase;
+	      @include breakpoint(mobile-landscape){
+	        font-size: 0.8em;
+	      }
+	      @include breakpoint(mobile){
+	        font-size: 0.6em;
+	      }
+	    }
+
+	    :-ms-input-placeholder {  
+	      color: #777777;
+	      text-transform: uppercase;
+	      @include breakpoint(mobile-landscape){
+	        font-size: 0.8em;
+	      }
+	      @include breakpoint(mobile){
+	        font-size: 0.6em;
+	      }
+	    }
+		.feature-filter{
+			display: none;
+		}
+		.store-list{
+			display: none;
+		}
+		.directions-panel{
+			display: none;
+		}
+		.button{
+			width: 80%;
+			margin: 10px 10% 0;
+		}
+		.avail {
+			padding: 0 20px;
+			text-align: center;
+			margin: 20px 0;
+			width: 100%;
+		}
+	}
+	#map-canvas{
+		margin-left: 250px;
+		height: 100%;
+		@include breakpoint(mobile-landscape){
+			margin-left: 0;
+		}
+	}
+}

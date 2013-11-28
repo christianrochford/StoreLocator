@@ -1,0 +1,46 @@
+
+.store{
+  background: #39B54A;
+  color: #fff;
+  font-family: $museobold;
+  text-transform: uppercase;
+  padding: 15px;
+  margin: 0;
+  text-shadow: none;
+}
+
+.store .title {
+  font-family: $museobold;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 4px;
+  margin-bottom: 12px;
+}
+
+.store .address,
+.store .phone{
+  color: #fff;
+  color: rgba(255,255,255,0.7);
+  font-family: $museobold;
+  font-size: 18px;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+  display: block;
+  text-align: center;
+  line-height: 25px;
+}
+
+.store .web a {
+  color: #fff;
+}
+
+.store .action {
+  font-size: 0.8em;
+  color: #fff;
+  margin-right: 0.5em;
+}
+.store a.action.directions{
+    display: none;
+}

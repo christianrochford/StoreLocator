@@ -1,0 +1,308 @@
+/*/////////////////////////////////////////////////////
+				Text Fonts
+/////////////////////////////////////////////////////*/
+
+
+$museolight: 'museo_sans_300regular';
+@font-face {
+	font-family: $museolight;
+	src: url('../fonts/MuseoSans_300-webfont.eot');
+	src: url('../fonts/MuseoSans_300-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/MuseoSans_300-webfont.woff') format('woff'),
+	url('../fonts/MuseoSans_300-webfont.ttf') format('truetype'),
+	url('../fonts/MuseoSans_300-webfont.svg#museo_sans_300regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+  }
+
+  $museoregular: 'museo_sans_500regular';
+  @font-face {
+	font-family: $museoregular;
+	src: url('../fonts/MuseoSans_500-webfont.eot');
+	src: url('../fonts/MuseoSans_500-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/MuseoSans_500-webfont.woff') format('woff'),
+	url('../fonts/MuseoSans_500-webfont.ttf') format('truetype'),
+	url('../fonts/MuseoSans_500-webfont.svg#museo_sans_500regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+  }
+
+  $museobold: 'museo_sans_700regular';
+  @font-face {
+	font-family: $museobold;
+	src: url('../fonts/MuseoSans_700-webfont.eot');
+	src: url('../fonts/MuseoSans_700-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/MuseoSans_700-webfont.woff') format('woff'),
+	url('../fonts/MuseoSans_700-webfont.ttf') format('truetype'),
+	url('../fonts/MuseoSans_700-webfont.svg#museo_sans_700regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+  }
+  $museoextrabold: 'museo_sans_900regular';
+  @font-face {
+	font-family: $museoextrabold;
+	src: url('../fonts/MuseoSans_900-webfont.eot');
+	src: url('../fonts/MuseoSans_900-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/MuseoSans_900-webfont.woff') format('woff'),
+	url('../fonts/MuseoSans_900-webfont.ttf') format('truetype'),
+	url('../fonts/MuseoSans_900-webfont.svg#museo_sans_900regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+  }
+
+
+  $imperialbold: 'urw_imperial_tbold';
+  @font-face {
+    font-family:  $imperialbold;
+    src: url('../fonts/urw_imperial_t_bold-webfont.eot');
+    src: url('../fonts/urw_imperial_t_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/urw_imperial_t_bold-webfont.woff') format('woff'),
+         url('../fonts/urw_imperial_t_bold-webfont.ttf') format('truetype'),
+         url('../fonts/urw_imperial_t_bold-webfont.svg#urw_imperial_tbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+  $bolditalic: 'alegreyabold_italic';
+
+@font-face {
+    font-family: $bolditalic;
+    src: url('../fonts/alegreya-bolditalic-webfont.eot');
+    src: url('../fonts/alegreya-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/alegreya-bolditalic-webfont.woff') format('woff'),
+         url('../fonts/alegreya-bolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/alegreya-bolditalic-webfont.svg#alegreyabold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+/*/////////////////////////////////////////////////////
+				Icon Fonts
+/////////////////////////////////////////////////////*/
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../icons/fonts/icomoon.eot');
+	src:url('../icons/fonts/icomoon.svg#icomoon') format('svg'),
+		url('../icons/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../icons/fonts/icomoon.ttf') format('truetype'),
+		url('../icons/fonts/icomoon.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-uniF000:before {
+	content: "\f000";
+}
+.icon-twitter:before {
+	content: "\e001";
+}
+.icon-spoons:before {
+	content: "\e002";
+}
+.icon-social:before {
+	content: "\e003";
+}
+.icon-search:before {
+	content: "\e004";
+}
+.icon-ribbon:before {
+	content: "\e005";
+}
+.icon-menu:before {
+	content: "\e006";
+}
+.icon-magnify:before {
+	content: "\e008";
+}
+.icon-health:before {
+	content: "\e009";
+}
+.icon-hands:before {
+	content: "\e00a";
+}
+.icon-fruit9:before {
+	content: "\e00b";
+}
+.icon-fruit8:before {
+	content: "\e00c";
+}
+.icon-fruit7:before {
+	content: "\e00d";
+}
+.icon-fruit6:before {
+	content: "\e00e";
+}
+.icon-fruit4:before {
+	content: "\e00f";
+}
+.icon-fruit2:before {
+	content: "\e010";
+}
+.icon-fruit1:before {
+	content: "\e011";
+}
+.icon-feather:before {
+	content: "\e012";
+}
+.icon-facebook:before {
+	content: "\e013";
+}
+.icon-ampersand:before {
+	content: "\e014";
+}
+.icon-youtube:before {
+	content: "\e000";
+}
+.icon-contact:before {
+	content: "\e015";
+}
+.icon-arrow-left:before {
+	content: "\e016";
+}
+.icon-cross:before {
+	content: "\e017";
+}
+.icon-arrow-right:before {
+	content: "\e018";
+}
+.icon-how:before {
+	content: "\e019";
+}
+.icon-slider-right:before {
+	content: "\e01a";
+}
+.icon-slider-left:before {
+	content: "\e01b";
+}
+.icon-close-modal:before {
+	content: "\e01c";
+}
+.icon-social-link:before {
+	content: "\e01d";
+}
+.icon-mail:before {
+	content: "\e007";
+}
+.icon-fruit19:before {
+	content: "\e01e";
+}
+.icon-fruit18:before {
+	content: "\e01f";
+}
+.icon-fruit17:before {
+	content: "\e020";
+}
+.icon-fruit16:before {
+	content: "\e021";
+}
+.icon-fruit15:before {
+	content: "\e022";
+}
+.icon-fruit12:before {
+	content: "\e023";
+}
+.icon-fruit11:before {
+	content: "\e024";
+}
+.icon-fruit10:before {
+	content: "\e025";
+}
+.icon-pinterest:before {
+	content: "\e026";
+}
+.icon-googleplus:before {
+	content: "\e027";
+}
+.icon-twitter2:before {
+	content: "\e028";
+}
+.icon-facebook2:before {
+	content: "\e029";
+}
+.icon-googleplus2:before {
+	content: "\e02a";
+}
+.icon-pinterest2:before {
+	content: "\e02b";
+}
+.icon-tumblr:before {
+	content: "\e02c";
+}
+.icon-minus:before {
+	content: "\e02d";
+}
+.icon-minus2:before {
+	content: "\e030";
+}
+.icon-logo:before {
+	content: "\e031";
+}
+.icon-tag:before {
+	content: "\e02e";
+}
+.icon-printer:before {
+	content: "\e02f";
+}
+.icon-download:before {
+	content: "\e032";
+}
+.icon-handyTips:before {
+	content: "\e034";
+}
+.icon-menu-arrow:before {
+	content: "\e035";
+}
+.icon-arrow-down:before {
+	content: "\e036";
+}
+.icon-four0four:before {
+	content: "\e037";
+}
+.icon-close:before {
+	content: "\e038";
+}
+.icon-exclamation:before {
+	content: "\e039";
+}
+.icon-privacy:before {
+	content: "\e03b";
+}
+.icon-terms:before {
+	content: "\e03a";
+}
+.icon-dot:before {
+	content: "\e033";
+}
+.icon-play:before {
+	content: "\e600";
+}
+.icon-recipe-videos:before {
+	content: "\e601";
+}
+.icon-vimeo:before {
+	content: "\e602";
+}

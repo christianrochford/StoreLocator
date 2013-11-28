@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if lte IE 7]><script src="assets/javascripts/lte-ie7.js"></script><![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Store Locator</title>
+
+  
+  <!-- Included CSS Files (Compressed) -->
+  <link rel="stylesheet" href="assets/stylesheets/combined.css">
+  <script src="assets/javascripts/modernizr.js"></script>
+</head>
+<body class="home">
+
+  <div class="map-container">
+  <div id="panel" class="storelocator-panel">
+      <div class="location-search">
+        <span class="icon-magnify" aria-hidden="true"></span>
+        <img src="assets/images/where.png">
+        <p class="avail">Folláin products are available from Tesco, SuperValu, Superquinn, Dunnes Stores, independent outlets and fine food shops nationwide.</p>
+      </div>
+  </div>
+  <div id="map-canvas">
+  </div>
+</div> 
+
+  <script src="assets/javascripts/jquery.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <script src="assets/javascripts/store-locator.compiled.js"></script>
+  <script src="assets/javascripts/infobubble-compiled.js"></script>
+  <script src="assets/javascripts/custom-map.js"></script>
+  <script src="assets/javascripts/app.js"></script>
+
+</body>
+</html>

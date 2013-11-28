@@ -1,0 +1,18 @@
+/*/////////////////////////////////////////////////////
+				      Buttons
+/////////////////////////////////////////////////////*/
+
+.dotted {
+	border: 2px dotted #777777;
+	color: #777777;
+	background: transparent;
+	font-size: 16px;
+	font-family: $museobold;
+	padding: 12px 20px 12px;
+
+&:hover, &:focus, &:active {
+		color: #a3a3a3;
+		background: transparent;
+		border: 2px dotted #a3a3a3;
+	}
+}
