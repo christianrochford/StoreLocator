@@ -118,6 +118,26 @@
     mapTypeId: 'map-style'
   });
 
+    // Get close button and insert it into streetView
+    // #button can be anyt dom element
+    var closeButton = document.querySelector('#button'),
+        controlPosition = google.maps.ControlPosition.RIGHT_TOP;
+
+    // Assumes map has been initiated 
+    var streetView = map.getStreetView();
+
+    // Hide useless and tiny default close button
+    streetView.setOptions({ enableCloseButton: false });
+
+    // Add to street view
+    streetView.controls[ controlPosition ].push( closeButton );
+
+    // Listen for click event on custom button
+    // Can also be $(document).on('click') if using jQuery
+    google.maps.event.addDomListener(closeButton, 'click', function(){
+        streetView.setVisible(false);
+    });
+
   map.mapTypes.set('map_style', styledMap);
   map.setMapTypeId('map_style');
 
@@ -160,15 +180,13 @@
 });
 
 $(window).load(function(){
-  $('form').append('<div id="search-map" class="button dotted">Search</div>');
-  $('form input').attr('placeholder', 'Where Are You?');
-  $('#search-map').click(function(){
-      console.log('hey!');
-      var e = jQuery.Event("keydown");
-      e.which = 13; // # Some key code value
-      $("input").focus(); //to ensure that the input field is in focus
-      $("input").trigger(e);
-  });
+  $('.button').click(function(){
+    var e = jQuery.Event('keydown');
+    $('input').focus(); //to ensure that the input field is in focus
+    $('input').trigger(e);
+});
 });
 
-
+$('.streetview').click(function(){
+  $('#button.icon-close').show();
+})

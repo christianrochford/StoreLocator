@@ -123,7 +123,7 @@
         a.c.view && a.set("view", a.c.view);
         a.e = $('<form class="storelocator-filter"/>');
         a.g[G](a.e);
-        a.c.locationSearch && (a.i = $('<div class="location-search"><h4>' + a.c.locationSearchLabel + "</h4><input></div>"), a.e[G](a.i), "undefined" != typeof google[t].places ? R(a) : a.e.submit(function () {
+        a.c.locationSearch && (a.i = $('<div class="location-search"><h4>' + a.c.locationSearchLabel + "</h4><input placeholder='Where are you?'><div class='button dotted'>Search</div></div>"), a.e[G](a.i), "undefined" != typeof google[t].places ? R(a) : a.e.submit(function () {
             a.searchPosition($("input", a.i).val())
         }), a.e.submit(function () {
             return g
@@ -251,8 +251,8 @@
             this.c.directions && this.a[r](".directions-to").val(b.getDetails().title);
             var c = a.get("view").getInfoWindow().getContent(),
                 e = $("<a/>").text("Directions")[p]("href", "#")[x]("action")[x]("directions"),
-                i = $("<a/>").text("Zoom here")[p]("href", "#")[x]("action")[x]("zoomhere"),
-                k = $("<a/>").text("Street view")[p]("href", "#")[x]("action")[x]("streetview");
+                i = $("<a/>").text("Zoom here")[p]("href", "javascript:void(0)")[x]("action")[x]("zoomhere"),
+                k = $("<a/>").text("Street view")[p]("href", "javascript:void(0)")[x]("action")[x]("streetview");
             e[z](function () {
                 a.showDirections();
                 return g
@@ -265,6 +265,7 @@
             });
             k[z](function () {
                 var c = a.get("view")[u]().getStreetView();
+                $('#button.icon-close').show();
                 c.setPosition(b[j]());
                 c.setVisible(d)
             });

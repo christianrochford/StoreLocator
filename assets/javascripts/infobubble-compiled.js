@@ -78,7 +78,7 @@
         d.style.zIndex = a.g + 1;
         d.style.cursor = "pointer";
         d.src =
-            "../storeLocator/assets/images/close-modal.png";
+            "../assets/images/close-modal.png";
         google.maps.event.addDomListener(
             d, "click", function () {
                 a.close();
@@ -943,7 +943,7 @@
             f.scrollHeight && (e +=
                 15);
         a.l.style.right = "20px";
-        a.l.style.top = "20px";
+        a.l.style.top = "30px";
         a.draw()
     }
 
@@ -958,3 +958,4 @@
     k.prototype.anchorPoint_changed =
         k.prototype.I;
 })();
+

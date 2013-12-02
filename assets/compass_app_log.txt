@@ -4800,3 +4800,6 @@ Load paths:
 2013-11-27 17:15:13 overwrite stylesheets/combined.css 
 2013-11-27 17:29:33 overwrite stylesheets/combined.css 
 2013-11-27 17:29:38 overwrite stylesheets/combined.css 
+2013-12-02 10:42:21     error sass/combined.scss (Line 130 of sass/_home.scss: Undefined variable: "$background".)
+2013-12-02 10:42:21 overwrite stylesheets/combined.css 
+2013-12-02 10:42:32 overwrite stylesheets/combined.css 
