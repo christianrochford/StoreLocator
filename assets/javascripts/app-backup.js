@@ -107,32 +107,12 @@
   }
 ];
 
-var geocoder;
-var map;
-
   var styledMap = new google.maps.StyledMapType(stylez, {name: "Styled Map"});
 
   var ICON = new google.maps.MarkerImage('../assets/images/map-tag.png', null, null, new google.maps.Point(14, 13));
 
-  // find address function
-function findAddress() {
-    var address = document.getElementById("gmap_where").value;
-    // script uses our 'geocoder' in order to find location by address name
-    geocoder.geocode( { 'address': address}, function(results, status) {
-        if (status == google.maps.GeocoderStatus.OK) { // and, if everything is ok
-            // we will center map
-            var addrLocation = results[0].geometry.location;
-            map.setCenter(addrLocation);
-            map.setZoom(12);
-        }
-    });
-}
-
   google.maps.event.addDomListener(window, 'load', function() {
-
-    geocoder = new google.maps.Geocoder();
-
-    map = new google.maps.Map(document.getElementById('map-canvas'), {
+    var map = new google.maps.Map(document.getElementById('map-canvas'), {
     center: new google.maps.LatLng(53.291489,-7.812138),
     zoom: 6,
     mapTypeId: 'map-style'

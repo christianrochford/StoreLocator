@@ -123,7 +123,7 @@
         a.c.view && a.set("view", a.c.view);
         a.e = $('<form class="storelocator-filter"/>');
         a.g[G](a.e);
-        a.c.locationSearch && (a.i = $('<div class="location-search"><h4>' + a.c.locationSearchLabel + "</h4><input placeholder='Where are you?'><div class='button dotted'>Search</div></div>"), a.e[G](a.i), "undefined" != typeof google[t].places ? R(a) : a.e.submit(function () {
+        a.c.locationSearch && (a.i = $('<div class="location-search"><h4>' + a.c.locationSearchLabel + "</h4></div>"), a.e[G](a.i), "undefined" != typeof google[t].places ? R(a) : a.e.submit(function () {
             a.searchPosition($("input", a.i).val())
         }), a.e.submit(function () {
             return g
